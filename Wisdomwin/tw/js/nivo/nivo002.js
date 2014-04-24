@@ -1,0 +1,16 @@
+jQuery(window).load(function(){
+    jQuery("#nivoslider-30").nivoSlider({
+        effect:"fade",
+        slices:10,
+        boxCols:10,
+        boxRows:10,
+        animSpeed:600,
+        pauseTime:3000,
+        startSlide:0,
+        directionNav:true,
+        controlNav:true,
+        controlNavThumbs:false,
+        pauseOnHover:false,
+        manualAdvance:false
+    });
+});

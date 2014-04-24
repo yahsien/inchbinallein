@@ -1,0 +1,544 @@
+html,body{
+background: url(../images/bg.png) repeat 0px 0px;
+font-family: "Helvetica Neue", "Microsoft JhengHei";
+margin: 0;
+padding:0;
+height: 100%;
+}
+* {
+padding: 0;
+margin: 0;
+outline: none;
+}
+#container {
+min-height:99%;
+height: auto !important;
+height: 99%; /*IE6不識別min-height*/
+position: relative;
+border-top:5px solid #f08f00;
+}
+#top_bar{
+width:960px;
+margin:10px auto 5px;
+}
+#top_bar:after{
+content:'';
+clear:both;
+display:block;
+}
+#logo{
+display:inline-block;
+}
+#logo a{
+}
+#language{
+display:inline-block;
+border:none;
+vertical-align:top;
+float:right;
+}
+#language a{
+
+color:#fff;
+text-decoration:none;
+font-size:12px;
+}
+#language a:before{
+content: url(../images/icon_langurage.gif);
+margin-right:3px;
+margin-left:5px;
+}
+#header {
+position:relative;
+border-top:1px solid #515151;
+border-bottom:1px solid #515151;
+background:url(../images/bg_header.jpg);
+padding-top:5px;
+height:52px;
+}
+#header nav{
+width:960px;
+margin:0 auto;
+height:50px;
+}
+#header nav:after{
+content: ' ';
+clear:both;
+display:block;
+}
+#header nav .menu{
+float: left;
+}
+#header nav .menu li{
+position:absolute;
+top:0;
+list-style: none;
+float: left;
+margin-top:2px;
+}
+#header nav .menu li a{
+background: url(../images/nav_text.png) left top no-repeat;
+height: 50px;
+display: block;
+filter:alpha(opacity=60); /*IE*/
+-moz-opacity:0.6; /*Firefox*/
+opacity:0.6;/*其他*/
+border-left:1px solid #515151;
+}
+#header nav .menu li a:hover{
+border-bottom:5px solid #f08f00;
+filter:alpha(opacity=100); /*IE*/
+-moz-opacity:1; /*Firefox*/
+opacity:1;/*其他*/
+}
+#header .menu li.nav1 a{
+background-position: left top;
+width:195px;
+}
+#header .menu li.nav2 a{
+position:absolute;
+background-position: -195px top;
+width:190px;
+left:195px;
+}
+#header .menu li.nav3 a{
+position:absolute;
+background-position: -385px top;
+width:190px;
+left:385px;
+}
+#header .menu li.nav4 a{
+position:absolute;
+background-position: -575px top;
+width:190px;
+left:575px;
+}
+#header .menu li.nav5 a{
+position:absolute;
+background-position: -765px top;
+width:195px;
+left:765px;
+border-right:1px solid #515151;
+}
+#page {
+width: 960px;
+margin:0px auto;
+padding: 50px 0 50px;
+height:100%;
+}
+
+#page:after{
+content: ' ';
+clear:both;
+display:block;
+}
+#page01 {
+width: 960px;
+margin:0px auto;
+padding:20px 0 50px;
+height:100%;
+}
+
+#page01:after{
+content: ' ';
+clear:both;
+display:block;
+}
+
+
+#title{
+background:url(../images/banner.jpg) left top no-repeat;
+width:960px;
+height:80px;
+margin:0;
+position:relative;
+}
+#title h1{
+font-size:42px;
+color:#fff;
+left:440px;
+top:85px;
+Z-index:1;
+position:absolute;
+letter-spacing:1px;
+}
+#title h1:after{
+content:'';
+left:-60px;
+top:-8px;
+width:580px;
+height:80px;
+background:#643d03;
+position:absolute;
+Z-index:-1;
+filter:alpha(opacity=70); /*IE*/
+-moz-opacity:0.7; /*Firefox*/
+opacity:0.7;/*其他*/
+}
+
+#footer-container {
+position: absolute;
+bottom: 0;
+width: 100%;
+height:50px;/*footer高度*/
+background: #6cf;
+clear:both;
+background:url(../images/bg_header.jpg);
+color:#fff;
+}
+#footer{
+width:960px;
+margin:0 auto;
+font-size:12px;
+padding-top:5px;
+}
+
+/*=======主體內容部分=======*/
+#content {
+float: left;
+margin-bottom:20px;
+width:960px;
+background:url(../images/bg_main.gif);
+min-height:400px;
+}
+
+#content h3{
+margin:0 auto;
+padding:0;
+}
+#content h3:after{
+content: url(../images/title_content_line.gif);
+display:block;
+line-height:0px;
+}
+#content p{
+margin:20px 0;
+display:block;
+width:620px;
+}
+#content a{
+color:#5a5a5a;
+text-decoration: none;
+}
+#content a:hover{
+color:#f08f00;
+text-decoration: none;
+}
+#left{
+float: left;
+width:280px;
+color:#e0dfdf;
+padding:10px;
+}
+#left h2{
+color:#fff;
+margin:0;
+letter-spacing:1px;
+padding-bottom:20px;
+}
+#left a{
+margin-left:10px;
+display:block;
+font-size:14px;
+color:#e3e1e1;
+line-height:24px;
+}
+
+#left a:hover:before{
+content:'>';
+}
+#left a:hover{
+color:#fff;
+}
+#right{
+width:620px;
+float:right;
+padding:20px 10px 10px 20px;
+line-height:30px;
+}
+#right p:first-letter{
+font-family:serif;
+font-size:28px;
+}
+#about_box{
+width:500px;
+margin:0 auto;
+display:block;
+}
+#about_box a{
+width:150px;
+height:150px;
+background:#000;
+float:left;
+margin:10px 7px 10px 8px;
+filter:alpha(opacity=60); /*IE*/
+-moz-opacity:0.6; /*Firefox*/
+opacity:0.6;/*其他*/
+text-decoration: none;
+color:#ccc;
+}
+#about_box a:hover{
+color:#fff;
+filter:alpha(opacity=100); /*IE*/
+-moz-opacity:1; /*Firefox*/
+opacity:1;/*其他*/
+}
+#about_box a h4{
+padding:0 0px 0 23px;
+position:relative;
+display:block;
+margin-top:10px;
+line-height:20px;
+}
+#about_box a h4:before{
+content:url(../images/title_blackbox.png);
+position:absolute;
+left:8px;
+top:5px;
+vertical-align:bottom;
+}
+#service_box{
+
+}
+#service_box a{
+width:140px;
+height:140px;
+background:#000;
+float:left;
+margin:10px 15px 10px 0;
+filter:alpha(opacity=60); /*IE*/
+-moz-opacity:0.6; /*Firefox*/
+opacity:0.6;/*其他*/
+text-decoration: none;
+color:#ccc;
+}
+#service_box a:hover{
+color:#fff;
+filter:alpha(opacity=100); /*IE*/
+-moz-opacity:1; /*Firefox*/
+opacity:1;/*其他*/
+}
+#service_box a h4{
+padding:0 0px 0 23px;
+position:relative;
+display:block;
+margin-top:10px;
+line-height:20px;
+}
+#service_box a h4:before{
+content:url(../images/title_blackbox.png);
+position:absolute;
+left:8px;
+top:5px;
+vertical-align:bottom;
+}
+.left-title-s{
+font-size:14px;
+color:#fff;
+}
+.group_txt{
+width:400px!important;
+float:left;
+line-height:26px;
+font-size:15px;
+
+}
+.group_pic{
+float:left;
+margin:15px 20px 0 0 ;
+
+}
+
+/*共用*/
+.mgr0{
+margin-right:0px!important;
+}
+.mgr10{
+margin-right:10px;
+}
+.mgr5{
+margin-right:5px;
+}
+
+.mgb20{
+margin-bottom:20px;	
+}
+.mgt2{
+margin-top:1px;
+}
+.mgt10{
+margin-top:10px!important;	
+}
+.mgt20{
+margin-top:20px;
+}
+.mgr20{
+margin-right:20px;	
+}
+.floatL{
+float:left;	
+}
+.colorF{
+color:#fff!important;	
+}
+
+/*slider*/
+#slider{
+width:100%;
+margin:0px auto;
+display:block;
+}
+.theme-dark .nivoSlider {
+	position:relative;
+	background:#fff url(loading.gif) no-repeat 50% 50%;
+    margin-bottom:10px;
+    overflow: visible;
+}
+.theme-dark .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-dark .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.theme-dark .nivo-controlNav {
+
+	padding: 0;
+
+	z-index: 10;
+}
+.theme-dark .nivo-controlNav a {
+	display:inline-block;
+	width:10px;
+	height:10px;
+	background:url(../images/bullets.png) no-repeat 0 2px;
+	text-indent:-9999px;
+	border:0;
+	margin: 0 2px;
+}
+.theme-dark .nivo-controlNav a.active {
+	background-position:0 100%;
+}
+
+.theme-dark .nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	text-indent:-9999px;
+	border:0;
+	top: auto;
+	bottom: -36px;
+	z-index: 11;
+}
+
+.theme-dark a.nivo-nextNav {
+	background-position:-16px 50%;
+	right:0px;
+}
+.theme-dark a.nivo-prevNav {
+    background-position:11px 50%;
+    left: auto;
+	right: 35px;
+}
+
+/*transaction table*/
+#right ul li{
+list-style:square;
+}
+#right ul{
+padding:0 10px 0 20px;
+}
+
+#right table{
+width:100%;
+border-collapse:collapse;
+margin:40px 0 20px 0;
+}
+#right thead{
+color:#f08f00;
+}
+#right thead tr{
+border-bottom:1px dotted #ccc;
+background:#f0f0f0;
+}
+#right tbody tr{
+border-bottom:1px dotted #ccc;
+}
+#right thead th{
+padding: 5px;
+line-height: 40px;
+}
+#right tbody{
+font-size:13px;
+}
+#right thead  th.year{
+width:80px;
+border-right: 1px dotted #cccccc;
+}
+#right thead  th.company{
+width:200px;
+border-left:1px dotted #ccc;
+}
+#right thead  th.transaction{
+width:180px;
+border-left:1px dotted #ccc;
+}
+#right thead  th.detail{
+width:60px;
+border-left:1px dotted #ccc;
+}
+#right thead  th.news{
+width:680px;
+border-left:1px dotted #ccc;
+}
+#right tbody  td.year_c{
+text-align:center;
+width:80px;
+line-height: 40px;
+}
+#right tbody  td.company_c{
+text-align:left;
+width:200px;
+padding: 5px 10px;
+line-height: 40px;
+}
+#right tbody  td.company_cc{
+text-align:left;
+width:200px;
+padding: 5px 10px;
+line-height: 40px;
+}
+#right tbody  td.company_cc a{
+color:#5a5a5a!important;
+}
+#right tbody  td.company_cc a:hover{
+color:#f08f00!important;
+}
+#right tbody  td.company_c a{
+color:#f08f00!important;
+}
+#right tbody  td.transaction_c{
+text-align:left;
+width:180px;
+padding: 5px 10px;
+}
+#right tbody  td.detail_c{
+text-align:center;
+width:60px;
+}
+#right thead  th.news_c{
+width:680px;
+text-align:left;
+padding: 5px 10px;
+}
+#right tbody  td.date_c{
+text-align:left;
+width:200px;
+padding: 5px;
+line-height: 40px;
+}
+

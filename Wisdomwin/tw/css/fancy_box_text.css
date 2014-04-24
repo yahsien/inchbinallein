@@ -1,0 +1,35 @@
+body{
+font-family: "Helvetica Neue", "Microsoft JhengHei";
+margin: 0;
+padding:0;
+height: 100%;
+}
+
+.content{
+ margin:0px;
+padding:25px;
+font-size:18px;
+line-height:30px;
+text-align:left;
+}
+ h3{
+margin:0 auto;
+padding:0;
+}
+ h3:after{
+content: url(../images/title_content_line.gif);
+display:block;
+line-height:0px;
+}
+.content li{
+list-style:square;
+margin:10px 0 0 20px;
+}
+.content01 li{
+list-style:none;
+margin:10px 0 0 20px;
+}
+
+h4{
+text-align:center!important;
+}
